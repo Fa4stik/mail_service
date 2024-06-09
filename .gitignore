@@ -1,0 +1,11 @@
+.env
+nodejs/.env
+python/.env
+
+nodejs/node_modules
+nodejs/package-lock.json
+
+.idea
+shallTips.sh
+MailService.postman_collection.json
+python/.idea

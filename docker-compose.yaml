@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  nginx:
+    image: fa4stik/mail_service_nginx
+    ports:
+      - "80:80"
+
+  python:
+    image: fa4stik/mail_service_python
+    ports:
+      - "8000:8000"
+    env_file:
+      - ".env"
+
+  nodejs:
+    image: fa4stik/mail_service_nodejs
+    ports:
+      - "5000:5000"
+    env_file:
+      - ".env"

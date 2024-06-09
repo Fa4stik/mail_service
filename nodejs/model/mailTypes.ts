@@ -1,0 +1,1 @@
+export type TMail = `${string}@${string}.${string}`
